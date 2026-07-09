@@ -51,13 +51,15 @@ The final **Suspicion Score (0-100)** applies a sigmoidal transformation to the 
 ```bash
 git clone [https://github.com/YOUR_USERNAME/insider-trading-radar.git](https://github.com/YOUR_USERNAME/insider-trading-radar.git)
 cd insider-trading-radar
+```
 ### 2. Install Project Dependencies
 Ensure your environment is running Python 3.11+ and install the structured libraries:
 ```bash
 pip install pandas numpy requests yfinance streamlit
+```
 ### 3. Populating Data & Launching the App
 Run the ingestion files sequentially to initialize the database records, then trigger the Streamlit engine:
-```bash
+```
 # Pull daily master entries and populate database tables
 python phase1_ingestion.py
 
@@ -66,7 +68,7 @@ python phase3_market_data.py
 
 # Fire up the Streamlit engine server locally
 streamlit run app.py
-
+```
 ## 📈 Key Learnings & Technical Takeaways
 * SEC Data Normalization: Overcame strict SEC automated rate-limiting policies by enforcing custom user-agent request mappings and parsing embedded text headers to locate clean XML payloads.
 * Vectorized Data Transformations: Avoided performance-heavy row loops by pivoting temporal tables across dynamic date-indexes to calculate parallel percentage shifts across varying assets simultaneously.
