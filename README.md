@@ -5,6 +5,8 @@ An end-to-end quantitative analytics application that ingests daily SEC EDGAR Fo
 ## 📊 App Previews
 * **Data Metrics & Risk Leaderboard:** Displays localized transactional logs parsed straight from federal endpoints alongside progress metrics.
 * **Alpha Visualizer:** Relies on indexed time-series vector streams to map equity movements directly against benchmark paths to uncover performance deviations.
+<img width="959" height="472" alt="Screenshot 2026-07-09 203150" src="https://github.com/user-attachments/assets/d5f425ce-b9fd-4d9f-8c99-684a49fd6f44" />
+<img width="959" height="475" alt="Screenshot 2026-07-09 203202" src="https://github.com/user-attachments/assets/95214362-71ad-4c6e-9971-0d4cd3e1a1e0" />
 
 ---
 
